@@ -8,6 +8,11 @@ a{
     color: #fff;
     text-decoration: none;
 }
+h2{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+}
 /* Header Section Start */
 header{
     width: 100%;
@@ -31,17 +36,258 @@ header ul li a {
 header ul li a.active{
     color: #ff4f7b;
 }
-
-
 header ul li a.activee{
     color: #3B5C25;
 }
 /* /Header Section End */
 /* Banner Section Start */
 .banner{
-    background: url(../img/banner3.png);
+    color: #fff;
     width: 100%;
     height: 650px;
+    padding: 0px 125px;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/banner3.png);
     background-size: 100% 100%;
+    position: relative;
+}
+.banner h1{
+    top: 100px;
+    font-size: 50px;
+    position: absolute;
+    font-weight: normal;
+}
+.banner h2{
+    top:240px;
+    font-size: 30px;
+    position: absolute;
+}
+.banner form{
+    width: 84%;
+    bottom:50px ;
+    height: 100px;
+    padding: 2px 8px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    background: #5c327a;
+}
+.banner form button{
+    width: 90px;
+    height: 30px;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    background: #483069;
+}
+.banner form button.active{
+    background: #FC2D48;
+}
+.banner form label{
+    display: none;
+}
+.banner form .SearchForm{
+    margin-top: 8px;
+}
+.banner form .SearchForm input,
+.banner form .SearchForm select{
+    height: 20px;
+    width: 200px;
+    margin-right:5px ;
+}
+.banner span{
+    color: #B2E5FF;
+    margin-right: 5px; ;
+}
+.banner form button.smt{
+    width: 90px;
+    height: 90px;
+    background: #FC2D48;
+    border-radius: 50%;
+    margin-left:70px;
+}
+.banner form .DropDown  {
+    margin-top: 8px;
+    ;
+   }
+.banner form .DropDown li{
+    list-style: none;
 }
 /* /Banner Section End */
+
+/* Fun Section Start */
+.fun{
+    width: 100%;
+    height: 400px;
+    padding: 50px 125px;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url(../img/mountain.avif);
+    background-size: 100% 100%;
+}
+.fun h2{
+    color:#fff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.fun ul{
+    display: flex;
+    justify-content:space-between;
+}
+.fun ul li{
+    list-style: none;
+    width: 130px;
+    color:#fff;
+    text-align: center;
+    padding-top: 20px;
+    height: 125px;
+    background: rgba(0,0,0,0.6);  
+}
+/* /Fun Section End */
+/* Newsletter Section Start */   
+.Newsletter{
+    width: 100%;
+    height: 120%;
+    padding: 50px 125px;
+    background: url(../img/Newsletter.jpeg );
+    background-size: 100% 120%;
+}
+.Newsletter h2,
+.Newsletter p
+{
+    padding-left: 50%;
+}
+.Newsletter form .foremail input {
+    padding-left: ;
+}
+/* /Newsletter Section End */
+/* Destination Section Start */
+.Destination{
+    width: 100%;
+    height: auto;
+    color: #fff;
+    padding: 50px 125px;
+    background: #20162F;
+}
+.Destination ul{
+    display: grid;
+    grid-template-rows: 375px 375px;
+    grid-template-columns:repeat(4, 23%);
+    grid-gap:30px;
+}
+.Destination ul li{
+    text-align: center;
+    list-style: none;
+    border-radius: 5px;
+    background: #fff;
+    border : 5px solid #fff;
+}
+.Destination ul li img{
+    width: 100%;
+    height: 50%;
+}
+.Destination ul li div.content{
+    color: #000;
+    padding: 20px;
+}
+div.content span{
+    color:#E04113;
+}
+.Destination ul li div.content p{
+    margin-top: 20px;
+}
+
+/* .Destination ul li div h3,
+.Destination ul li div p{
+    padding:0px 20px ;
+}
+.Destination ul li div h3{
+    font-weight: bold;
+    font-size: 300;
+    padding-top: 30px;
+    
+} */
+/* /Destination Section End */
+
+/* Estimate Section Start */
+.estimate{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 50px 125px;
+    background:#664CAD ;
+    
+}
+.estimate form label{
+    display: none;
+}
+.estimate form .cal{
+    background:#FE9102;
+}
+.estimate img{
+    width: 400px; 
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+/* /Estimate Section End */
+
+/* Blog Section Start */
+.blog{
+    width: 100%;
+    height: auto;
+    padding: 50px 150px;
+}
+.blog h2{
+    color: #000;
+    margin-bottom: 10px;
+}
+.blog h2+p{
+    text-align: center;
+    padding: 0px 200px;
+}
+.blog img{
+    width: 150px;
+    height: 150px;
+}
+.blog-content{
+    margin: 10px auto;
+    display: flex;
+}
+.blog-content div{
+    display: flex;
+    padding: 10px;
+}
+.blog-content div div{
+display: inline;
+}
+/* /Blog Section End */
+
+/* Footer Section Start */
+footer{
+    width: 100%;
+    height: auto;
+    padding: 50px 125px;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+                url(../img/footerimg.jpeg);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: space-between;
+}
+footer h3{
+    color: #918E97;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+footer ul li{
+    list-style: none;
+}
+footer ul li a{
+    color: #918E97;
+}
+footer ul li a span{
+    color: #fff;
+    font-weight: 500;
+    
+}
+/* /Footer Section End */
